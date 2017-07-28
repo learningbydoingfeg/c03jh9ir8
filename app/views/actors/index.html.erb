@@ -1,6 +1,10 @@
+<div>
+	<%= link_to 'Crear Actor', '/actors/new' %>
+
+</div>
 
 <div>
-<% @actors.each do |actor| %>
+<% @actor.each do |actor| %>
 <strong><%= actor.name %></strong>
 <img src="<%= actor.image_url %>">
 	<ul>
@@ -20,5 +24,6 @@
 	</ul>
 <% end %>
 </div>
+
 
 

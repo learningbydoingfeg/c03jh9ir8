@@ -1,0 +1,20 @@
+<h1>Crea tu Actor!!</h1>
+
+<%= form_for [@actor] do |f| %>
+  Nombre  
+  <%= f.text_field :name %><br>
+  Fecha de Nacimiento
+  <%= f.date_field :birth_date %><br><br>
+  Lugar de Nacimiento
+  <%= f.text_field :birth_place %><br><br>
+  Foto
+  <%= f.text_field :image_url %><br><br>
+  Checkea si está muerto
+  <%= f.check_box :alive %><br><br>
+  Fecha de muerte
+  <%= f.date_field :death_date %><br><br>
+  Donde murió?
+  <%= f.text_field :death_place %><br><br>
+   
+  <%= f.submit "Crea tu Actor" %>
+<% end %>
