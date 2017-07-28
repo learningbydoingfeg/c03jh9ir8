@@ -15,7 +15,7 @@ class ActorsController < ApplicationController
 		if @actor.save
 			redirect_to actors_path
 		else
-			render actors_new_path
+			render new_actor_path
 		end
 	end
 
